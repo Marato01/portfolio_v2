@@ -31,7 +31,6 @@ const skills = [
   { name: "Agile Method", level: 50, category: "others" },
 
 
-
 ];
 
 
