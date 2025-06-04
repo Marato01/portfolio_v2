@@ -1,5 +1,6 @@
 import { Instagram, Linkedin, Mail, MapPin, Phone, Twitter, Twitch } from "lucide-react";
 import LoaderSD from "./Loader";
+import { BsTelegram } from "react-icons/bs";
 
 export const ContactSection = () => {
   return (
@@ -75,7 +76,7 @@ export const ContactSection = () => {
               <h4 className="font-medium mb-4 text-center">Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/sam-sothavy-55760a270"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
@@ -83,18 +84,9 @@ export const ContactSection = () => {
                 >
                   <Linkedin className="h-6 w-6" />
                 </a>
+
                 <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                  aria-label="Visit my Twitter profile"
-                >
-                  <Twitter className="h-6 w-6" />
-                </a>
-                <a
-                
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/sothavy_sam/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
@@ -103,13 +95,13 @@ export const ContactSection = () => {
                   <Instagram className="h-6 w-6" />
                 </a>
                 <a
-                  href="https://twitch.tv"
+                  href="https://t.me/Samsothavy"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
                   aria-label="Visit my Twitch profile"
                 >
-                  <Twitch className="h-6 w-6" />
+                  <BsTelegram className="h-6 w-6" />
                 </a>
               </div>
             </div>
