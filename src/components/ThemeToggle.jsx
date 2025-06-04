@@ -6,26 +6,25 @@ export const ThemeToggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
+    // Check localStorage first
     const storedTheme = localStorage.getItem("theme");
-    if (storedTheme === "dark") {
-      setIsDarkMode(true);
-      document.documentElement.classList.add("dark");
+    if (storedTheme) {
+      setIsDarkMode(storedTheme === "dark");
+      document.documentElement.classList.toggle("dark", storedTheme === "dark");
     } else {
-      localStorage.setItem("theme", "light");
-      setIsDarkMode(false);
+      // Fallback to system preference for default dark mode
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      setIsDarkMode(prefersDark);
+      document.documentElement.classList.toggle("dark", prefersDark);
+      localStorage.setItem("theme", prefersDark ? "dark" : "light");
     }
   }, []);
 
   const toggleTheme = () => {
-    if (isDarkMode) {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-      setIsDarkMode(false);
-    } else {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-      setIsDarkMode(true);
-    }
+    const newTheme = !isDarkMode;
+    setIsDarkMode(newTheme);
+    document.documentElement.classList.toggle("dark", newTheme);
+    localStorage.setItem("theme", newTheme ? "dark" : "light");
   };
 
   return (
@@ -33,8 +32,9 @@ export const ThemeToggle = () => {
       onClick={toggleTheme}
       className={cn(
         "fixed max-sm:hidden top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300",
-        "focus:outlin-hidden"
+        "focus:outline-none"
       )}
+      aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
     >
       {isDarkMode ? (
         <Sun className="h-6 w-6 text-yellow-300" />
