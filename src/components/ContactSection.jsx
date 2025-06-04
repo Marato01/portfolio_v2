@@ -33,7 +33,7 @@ export const ContactSection = () => {
                     className="text-muted-foreground hover:text-primary transition-colors relative group"
                     aria-label="Send email to samsothavy68@gmail.com"
                   >
-                    samsothavy68@gmail.commmmmmmmmmmmmmmmmmmm
+                    samsothavy68@gmail.com
                     <span className="absolute -top-8 left-1/2 -translate-x-1/2 hidden group-hover:block bg-gray-800 text-white text-xs rounded py-1 px-2">
                       Send an email
                     </span>
