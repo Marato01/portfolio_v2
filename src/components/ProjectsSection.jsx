@@ -1,4 +1,5 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { SiAndroid } from "react-icons/si"; // Icon from react-icons
 
 const projects = [
   {
@@ -9,6 +10,7 @@ const projects = [
     tags: ["Flutter", "Node.js", "Thingboard", "MongoDB"],
     demoUrl: "",
     githubUrl: "",
+    apkUrl: "https://drive.google.com/uc?export=download&id=1tIYvtiOuMJh4kzFVxZOrTQ9uRllygUN2"
   },
   {
     id: 2,
@@ -86,11 +88,11 @@ export const ProjectsSection = () => {
                       <ExternalLink size={20} />
                     </a>
                     <a
-                      href={project.githubUrl}
-                      target="_blank"
+                      href={project.apkUrl}
+                      download
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
-                      <Github size={20} />
+                      <SiAndroid size={20} />
                     </a>
                   </div>
                 </div>
