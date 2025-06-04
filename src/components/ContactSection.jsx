@@ -93,6 +93,7 @@ export const ContactSection = () => {
                   <Twitter className="h-6 w-6" />
                 </a>
                 <a
+                
                   href="https://instagram.com"
                   target="_blank"
                   rel="noopener noreferrer"
