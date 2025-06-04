@@ -3,24 +3,39 @@ import { cn } from "@/lib/utils";
 
 const skills = [
   { name: "Flutter", level: 80, category: "mobile" },
-  { name: "Kotlin", level: 65, category: "mobile" },
+  { name: "Kotlin", level: 20, category: "mobile" },
 
-  { name: "Node.js", level: 80, category: "backend" },
-  { name: "MongoDB", level: 70, category: "backend" },
-  { name: "PostgreSQL", level: 65, category: "backend" },
-  { name: "MySQL", level: 60, category: "backend" },
-  { name: "Oracle", level: 60, category: "backend" },
+  { name: "MongoDB", level: 70, category: "database" },
+  { name: "PostgreSQL", level: 65, category: "database" },
+  { name: "MySQL", level: 60, category: "database" },
+  { name: "Oracle", level: 60, category: "database" },
+  { name: "SQlite", level: 50, category: "database" },
+  { name: "Directus", level: 50, category: "database" },
+  { name: "Thingboard", level: 50, category: "database" },
+
 
   { name: "Git/GitHub", level: 90, category: "tools" },
   { name: "Docker", level: 70, category: "tools" },
   { name: "Figma", level: 85, category: "tools" },
   { name: "VS Code", level: 95, category: "tools" },
   { name: "Android Studio", level: 95, category: "tools" },
+  { name: "Postman", level: 95, category: "tools" },
+  { name: "IntelliJ", level: 95, category: "tools" },
+  { name: "Microsoft 365", level: 90, category: "tools" },
+
+  { name: "Node.js", level: 40, category: "backend" },
+  { name: "Spring", level: 30, category: "backend" },
+
+  { name: "Project Management", level: 50, category: "others" },
+  { name: "Time Management", level: 50, category: "others" },
+  { name: "Agile Method", level: 50, category: "others" },
+
+
 
 ];
 
 
-const categories = ["all", "mobile", "backend", "tools"];
+const categories = ["all", "mobile", "backend", "database" ,"tools", "others"];
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
