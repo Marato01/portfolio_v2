@@ -3,10 +3,10 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
+    title: "HydroB App",
+    description: "This mobile application is designed to help users monitor and configure pH and Electrical Conductivity (EC) values in real-time using Bluetooth-enabled sensors. It is ideal for applications in hydroponics, aquaponics, agriculture, gardening, and water quality monitoring, where maintaining optimal pH and EC levels is critical.",
+    image: "/hydrob.jpg",
+    tags: ["Flutter", "Node.js", "Thingboard", "MongoDB"],
     demoUrl: "",
     githubUrl: "",
   },
