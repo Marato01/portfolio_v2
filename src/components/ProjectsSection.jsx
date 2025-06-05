@@ -42,6 +42,16 @@ const projects = [
     demoUrl: "#",
     githubUrl: "#",
   },
+  {
+    id: 5,
+    title: "E-commerce App",
+    description:
+      "The E-commerce app is a mobile application designed for selling clothes online. It allows users to browse products, add items to a cart, and place orders. This app was developed as part of my final exam project during my Flutter course at ISTAD school, where I learned how to build modern mobile applications using Flutter and Dart. The project helped me gain hands-on experience in UI/UX design, state management, and integrating features like product listing, shopping cart, and checkout process.",
+    image: "/projects/project3.png",
+    tags: ["Flutter"],
+    demoUrl: "#",
+    githubUrl: "#",
+  },
 ];
 
 export const ProjectsSection = () => {
