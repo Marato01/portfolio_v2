@@ -14,21 +14,31 @@ const projects = [
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Config AI App",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
+      "The Config AI App is a user-friendly application designed to configure settings directly on firmware via Bluetooth or Wi-Fi. Once connected, you can easily adjust and customize values on boards like ESP and similar devices.",
+    image: "/configai.jpg",
+    tags: ["Flutter"],
     demoUrl: "#",
     githubUrl: "#",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "Robotbery App",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
+      "Robotbery App is an app that lets you control all the products in the AI Farm company using Bluetooth and Wi-Fi.",
+    image: "/robotberry.jpg",
+    tags: ["Flutter"],
+    demoUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    id: 4,
+    title: "Aladdindo App",
+    description:
+      "Aladdindo is a robot service app that acts as the interface to control the robot.",
     image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
+    tags: ["Kotlin"],
     demoUrl: "#",
     githubUrl: "#",
   },
