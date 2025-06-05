@@ -29,7 +29,7 @@ const projects = [
       "Robotbery App is an app that lets you control all the products in the AI Farm company using Bluetooth and Wi-Fi.",
     image: "/robotberry.jpg",
     tags: ["Flutter"],
-    demoUrl: "#",
+    demoUrl: "https://play.google.com/store/apps/details?id=com.aifarm.robotberry",
     githubUrl: "#",
   },
   {
