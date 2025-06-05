@@ -46,7 +46,7 @@ export const AboutSection = () => {
                 Get In Touch
               </a>
               <a
-                href="https://drive.google.com/uc?export=download&id=1KnFCcRJgOlFATrRRICfFSIJ_04ZvUqTU"
+                href="https://drive.google.com/uc?export=download&id=1BLmDl2Lf4WfIGoDBRajxp7Hg-AMEAzCo"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
                 download
               >
