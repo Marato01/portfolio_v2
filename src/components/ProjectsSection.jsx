@@ -37,7 +37,7 @@ const projects = [
     title: "Aladdindo App",
     description:
       "Aladdindo is a robot service app that acts as the interface to control the robot.",
-    image: "/projects/project3.png",
+    image: "/aladindo.jpg",
     tags: ["Kotlin"],
     demoUrl: "#",
     githubUrl: "#",
@@ -47,7 +47,7 @@ const projects = [
     title: "E-commerce App",
     description:
       "The E-commerce app is a mobile application designed for selling clothes online. It allows users to browse products, add items to a cart, and place orders. This app was developed as part of my final exam project during my Flutter course at ISTAD school, where I learned how to build modern mobile applications using Flutter and Dart. The project helped me gain hands-on experience in UI/UX design, state management, and integrating features like product listing, shopping cart, and checkout process.",
-    image: "/projects/project3.png",
+    image: "/ecommerce.jpg",
     tags: ["Flutter"],
     demoUrl: "#",
     githubUrl: "#",
