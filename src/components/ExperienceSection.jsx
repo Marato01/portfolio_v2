@@ -22,7 +22,7 @@ export const ExperienceSection = () => {
                   Lead / Android Developer – AI Farm Robotic
                 </h4>
                 <p className="text-muted-foreground text-sm mb-1">
-                  Jun 2024 – Present | Ring Road 2, Dangkao, Phnom Penh
+                  Jun 2024 – Jun 2025 | Ring Road 2, Dangkao, Phnom Penh
                 </p>
                 <ul className="list-disc pl-5 text-muted-foreground text-sm space-y-1">
                   <li>Designed intuitive UI/UX based on best practices</li>
