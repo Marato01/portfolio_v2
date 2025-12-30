@@ -32,12 +32,23 @@ export const CertificateSection = () => {
           </div>
 
 
-          {/* Certificate 2 */}
+          {/* Certificate 3 */}
           <div className="flex justify-center">
             <div className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[480px] h-[180px] sm:h-[220px] md:h-[280px] rounded-lg overflow-hidden shadow-md border border-border hover:shadow-xl transition-shadow duration-300">
               <img
                 src="/spn_certificate.jpg"
                 alt="Certificate 2"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Certificate 3 */}
+          <div className="flex justify-center">
+            <div className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[480px] h-[180px] sm:h-[220px] md:h-[280px] rounded-lg overflow-hidden shadow-md border border-border hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="/istad.jpg"
+                alt="Certificate 3"
                 className="w-full h-full object-cover"
               />
             </div>

@@ -18,7 +18,7 @@ export const EducationSection = () => {
                 <p className="text-muted-foreground text-sm mb-1">
                   Bachelor of Management Information Systems (MIS)
                 </p>
-                <p className="text-sm text-muted-foreground">In Progress</p>
+                <p className="text-sm text-muted-foreground">Completed in 2025</p>
               </div>
             </div>
           </div>

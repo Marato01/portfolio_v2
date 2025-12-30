@@ -9,7 +9,32 @@ export const ExperienceSection = () => {
         </h2>
 
         <div className="grid grid-cols-1 gap-6">
-          {/* Experience 1: AI Farm Robotic */}
+
+           {/* Experience 1: Tonair Digital */}
+          <div className="gradient-border p-6 card-hover">
+            <div className="flex items-start gap-4">
+              <img
+                src="/spn.png" // Replace with your actual logo path
+                alt="Tonair Digital"
+                className="h-10 w-10 object-contain rounded-full"
+              />
+              <div className="text-left">
+                <h4 className="font-semibold text-lg">
+                  Full Stack Developer – Tonair Digital
+                </h4>
+                <p className="text-muted-foreground text-sm mb-1">
+                  Aug 2025 – Dec 2025 | Timesquare 3, street 317 and street 335, Sangkat Boeng Kak 1, Toul Kork, Phnom Penh
+                </p>
+                <ul className="list-disc pl-5 text-muted-foreground text-sm space-y-1">
+                  <li>Enhanced application performance and scalability</li>
+                  <li>Implemented new features and functionality</li>
+                  <li>Analyzed logic and optimized algorithms</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Experience 2: AI Farm Robotic */}
           <div className="gradient-border p-6 card-hover">
             <div className="flex items-start gap-4">
               <img
@@ -37,7 +62,7 @@ export const ExperienceSection = () => {
             </div>
           </div>
 
-          {/* Experience 2: Sathapana Bank */}
+          {/* Experience 3: Sathapana Bank */}
           <div className="gradient-border p-6 card-hover">
             <div className="flex items-start gap-4">
               <img
