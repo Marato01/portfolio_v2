@@ -52,6 +52,16 @@ const projects = [
     demoUrl: "#",
     githubUrl: "#",
   },
+   {
+    id: 6,
+    title: "Modern Business App",
+    description:
+      "The Modern Business App is a POS system that help small business owners manage their sales, inventory, and customer data efficiently",
+    image: "/mb_seller.jpg",
+    tags: ["Flutter"],
+    demoUrl: "#",
+    githubUrl: "#",
+  },
 ];
 
 export const ProjectsSection = () => {
