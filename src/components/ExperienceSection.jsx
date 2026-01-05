@@ -14,7 +14,7 @@ export const ExperienceSection = () => {
           <div className="gradient-border p-6 card-hover">
             <div className="flex items-start gap-4">
               <img
-                src="/spn.png" // Replace with your actual logo path
+                src="/tonair.jpg" // Replace with your actual logo path
                 alt="Tonair Digital"
                 className="h-10 w-10 object-contain rounded-full"
               />
