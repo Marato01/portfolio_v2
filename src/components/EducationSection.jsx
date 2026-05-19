@@ -9,6 +9,34 @@ export const EducationSection = () => {
         </h2>
 
         <div className="grid grid-cols-1 gap-6">
+           {/* SOC analysis */}
+          <div className="gradient-border p-6 card-hover">
+            <div className="flex items-start gap-4">
+              <GraduationCap className="h-8 w-8 text-primary" />
+              <div className="text-left">
+                <h4 className="font-semibold text-lg">SalaCyber</h4>
+                <p className="text-muted-foreground text-sm mb-1">
+                  Cybersecurity Analyst and Operation
+                </p>
+                <p className="text-sm text-muted-foreground">In progress</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Ethical hacking */}
+          <div className="gradient-border p-6 card-hover">
+            <div className="flex items-start gap-4">
+              <GraduationCap className="h-8 w-8 text-primary" />
+              <div className="text-left">
+                <h4 className="font-semibold text-lg">SalaCyber</h4>
+                <p className="text-muted-foreground text-sm mb-1">
+                  Ethical Hacking Essentials
+                </p>
+                <p className="text-sm text-muted-foreground">In progress</p>
+              </div>
+            </div>
+          </div>
+
           {/* Setec Institute */}
           <div className="gradient-border p-6 card-hover">
             <div className="flex items-start gap-4">
@@ -60,7 +88,7 @@ export const EducationSection = () => {
             <div className="flex items-start gap-4">
               <GraduationCap className="h-8 w-8 text-primary" />
               <div className="text-left">
-                <h4 className="font-semibold text-lg">CISCO</h4>
+                <h4 className="font-semibold text-lg">SalaCyber</h4>
                 <ul className="text-muted-foreground text-sm list-disc pl-4 mt-1">
                     <li>CyberSecurity Essentials</li>
                 </ul>

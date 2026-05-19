@@ -2,39 +2,60 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const skills = [
-  { name: "Flutter", level: 80, category: "mobile" },
-  { name: "Kotlin", level: 20, category: "mobile" },
+  { name: "Java", level: 80, category: "programming" },
+  { name: "Node.js", level: 50, category: "programming" },
+  { name: "Python", level: 50, category: "programming" },
+  { name: "Dart", level: 60, category: "programming" },
+  { name: "JavaScript", level: 50, category: "programming" },
+  { name: "SQL", level: 70, category: "programming" },
+  { name: "HTML/CSS", level: 80, category: "programming" },
+  { name: "Bash/Shell Scripting", level: 60, category: "programming" },
 
-  { name: "MongoDB", level: 70, category: "database" },
-  { name: "PostgreSQL", level: 65, category: "database" },
-  { name: "MySQL", level: 60, category: "database" },
-  { name: "Oracle", level: 60, category: "database" },
-  { name: "SQlite", level: 50, category: "database" },
-  { name: "Directus", level: 50, category: "database" },
-  { name: "Thingboard", level: 50, category: "database" },
+  { name: "Linux", level: 80, category: "infrastructure" },
+  { name: "Windows Server", level: 65, category: "infrastructure" },
+  { name: "Network Fundamentals", level: 70, category: "infrastructure" },
+
+  { name: "MySql", level: 90, category: "database" },
+  { name: "PostgreSQL", level: 70, category: "database" },
+  { name: "Oracle DB", level: 30, category: "database" },
+  { name: "SQlite", level: 40, category: "database" },
+  { name: "MongoDB", level: 50, category: "database" },
 
 
-  { name: "Git/GitHub", level: 90, category: "tools" },
-  { name: "Docker", level: 70, category: "tools" },
-  { name: "Figma", level: 85, category: "tools" },
-  { name: "VS Code", level: 95, category: "tools" },
-  { name: "Android Studio", level: 95, category: "tools" },
-  { name: "Postman", level: 95, category: "tools" },
-  { name: "IntelliJ", level: 95, category: "tools" },
-  { name: "Microsoft 365", level: 90, category: "tools" },
+  { name: "SOC Monitoring", level: 40, category: "security operations" },
+  { name: "Incident Response", level: 30, category: "security operations" },
+  { name: "Threat Detection", level: 20, category: "security operations" },
+  { name: "Log Analysis", level: 50, category: "security operations" },
+  { name: "Threat Hunting", level: 30, category: "security operations" },
+  { name: "Security Metrics", level: 50, category: "security operations" },
 
-  { name: "Node.js", level: 40, category: "backend" },
-  { name: "Spring", level: 30, category: "backend" },
 
-  { name: "Project Management", level: 50, category: "others" },
-  { name: "Time Management", level: 50, category: "others" },
-  { name: "Agile Method", level: 50, category: "others" },
+  { name: "SIEM (Splunk)", level: 50, category: "security tools" },
 
+
+  { name: "Metasploit", level: 70, category: "Pentesting tools" },
+  { name: "Searchsploit", level: 70, category: "Pentesting tools" },
+  { name: "Burp Suite", level: 70, category: "Pentesting tools" },
+  { name: "Nmap", level: 70, category: "Pentesting tools" },
+  { name: "Nikto", level: 70, category: "Pentesting tools" },
+  { name: "Nessus", level: 70, category: "Pentesting tools" },
+  { name: "Google Dorking", level: 70, category: "Pentesting tools" },
+  { name: "Wireshark", level: 70, category: "Pentesting tools" },
+  { name: "John the Ripper", level: 70, category: "Pentesting tools" },
+  { name: "Hydra", level: 70, category: "Pentesting tools" },
+  { name: "Gobuster", level: 70, category: "Pentesting tools" },
+  { name: "Dirbuster", level: 70, category: "Pentesting tools" },
+  { name: "SQLmap", level: 70, category: "Pentesting tools" },
+
+  { name: "Git", level: 70, category: "other" },
+  { name: "Docker", level: 70, category: "other" },
+  { name: "Time Management", level: 80, category: "other" },
+  { name: "Pentesting life cycle", level: 80, category: "other" }
 
 ];
 
 
-const categories = ["all", "mobile", "backend", "database" ,"tools", "others"];
+const categories = ["all", "programming","infrastructure","database","security operations", "security tools", "Pentesting tools", "other"];
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -48,6 +69,10 @@ export const SkillsSection = () => {
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           My <span className="text-primary"> Skills</span>
         </h2>
+
+        <p className="text-lg text-muted-foreground text-center mb-12">
+          Comprehensive skill set developed through professional experience, specialized training, and continuous learning
+        </p>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           {categories.map((category, key) => (

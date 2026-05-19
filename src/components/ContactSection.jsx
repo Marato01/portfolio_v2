@@ -1,6 +1,7 @@
 import { Instagram, Linkedin, Mail, MapPin, Phone, Twitter, Twitch } from "lucide-react";
 import LoaderSD from "./Loader";
-import { BsTelegram } from "react-icons/bs";
+import { BsGithub, BsTelegram } from "react-icons/bs";
+import { SiTryhackme } from "react-icons/si";
 
 export const ContactSection = () => {
   return (
@@ -102,6 +103,26 @@ export const ContactSection = () => {
                   aria-label="Visit my Twitch profile"
                 >
                   <BsTelegram className="h-6 w-6" />
+                </a>
+
+                <a
+                  href="https://tryhackme.com/p/samsothavy68"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  aria-label="Visit my TryHackMe profile"
+                >
+                  <SiTryhackme className="h-6 w-6" />
+                </a>
+
+                <a
+                  href="https://github.com/Marato01"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  aria-label="Visit my GitHub profile"
+                >
+                  <BsGithub className="h-6 w-6" />
                 </a>
               </div>
             </div>

@@ -1,66 +1,112 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
-import { SiAndroid } from "react-icons/si"; // Icon from react-icons
+import { SiAndroid, SiTryhackme } from "react-icons/si"; // Icon from react-icons
 
 const projects = [
   {
     id: 1,
-    title: "HydroB App",
-    description: "This mobile application is designed to help users monitor and configure pH and Electrical Conductivity (EC) values in real-time using Bluetooth-enabled sensors. It is ideal for applications in hydroponics, aquaponics, agriculture, gardening, and water quality monitoring, where maintaining optimal pH and EC levels is critical.",
-    image: "/hydrob.jpg",
-    tags: ["Flutter", "Node.js", "Thingboard", "MongoDB"],
-    demoUrl: "",
-    githubUrl: "",
-    apkUrl: "https://drive.google.com/uc?export=download&id=1tIYvtiOuMJh4kzFVxZOrTQ9uRllygUN2"
+    title: "Nessus",
+    description: "Learn how to set up and use Nessus, a popular vulnerability scanner. This room covers installation, configuration, and practical usage of Nessus to identify security weaknesses in systems and networks.",
+    image: "https://tryhackme-images.s3.amazonaws.com/room-icons/2fc9d2bc41c0ad97d655ed460ea44fca.png",
+    tags: ["Easy"],
+    demoUrl: "https://tryhackme.com/room/rpnessusredux?utm_campaign=social_share&utm_medium=social&utm_content=share-completed-room&utm_source=copy&sharerId=69b0742e066fd68a51ce16fe",
   },
   {
     id: 2,
-    title: "Config AI App",
+    title: "SQLMAP",
     description:
-      "The Config AI App is a user-friendly application designed to configure settings directly on firmware via Bluetooth or Wi-Fi. Once connected, you can easily adjust and customize values on boards like ESP and similar devices.",
-    image: "/configai.jpg",
-    tags: ["Flutter"],
-    demoUrl: "#",
-    githubUrl: "#",
+      "Learn about and use Sqlmap to exploit the web application",
+    image: "https://tryhackme-images.s3.amazonaws.com/room-icons/523723e4d3b75b6439b8e2cd0fa6880b.png",
+    tags: ["Easy"],
+    demoUrl: "https://tryhackme.com/room/sqlmap?utm_campaign=social_share&utm_medium=social&utm_content=share-completed-room&utm_source=copy&sharerId=69b0742e066fd68a51ce16fe",
   },
   {
     id: 3,
-    title: "Robotbery App",
+    title: "What is Networking?",
     description:
-      "Robotbery App is an app that lets you control all the products in the AI Farm company using Bluetooth and Wi-Fi.",
-    image: "/robotberry.jpg",
-    tags: ["Flutter"],
-    demoUrl: "https://play.google.com/store/apps/details?id=com.aifarm.robotberry",
-    githubUrl: "#",
+      "Begin learning the fundamentals of computer networking in this bite-sized and interactive module.",
+    image: "https://tryhackme-images.s3.amazonaws.com/room-icons/presec-room-image4.png",
+    tags: ["Info"],
+    demoUrl: "https://tryhackme.com/room/whatisnetworking?utm_campaign=social_share&utm_medium=social&utm_content=share-completed-room&utm_source=copy&sharerId=69b0742e066fd68a51ce16fe",
   },
   {
     id: 4,
-    title: "Aladdindo App",
+    title: "Pentesting Fundamentals",
     description:
-      "Aladdindo is a robot service app that acts as the interface to control the robot.",
-    image: "/aladindo.jpg",
-    tags: ["Kotlin"],
-    demoUrl: "#",
-    githubUrl: "#",
+      "Learn the important ethics and methodologies behind every pentest.",
+    image: "https://tryhackme-images.s3.amazonaws.com/room-icons/66704dd0e54a1f39bff7b1a1-1735574298438",
+    tags: ["Easy"],
+    demoUrl: "https://tryhackme.com/room/pentestingfundamentals?utm_campaign=social_share&utm_medium=social&utm_content=share-completed-room&utm_source=copy&sharerId=69b0742e066fd68a51ce16fe",
   },
   {
     id: 5,
-    title: "E-commerce App",
-    description:
-      "The E-commerce app is a mobile application designed for selling clothes online. It allows users to browse products, add items to a cart, and place orders. This app was developed as part of my final exam project during my Flutter course at ISTAD school, where I learned how to build modern mobile applications using Flutter and Dart. The project helped me gain hands-on experience in UI/UX design, state management, and integrating features like product listing, shopping cart, and checkout process.",
-    image: "/ecommerce.jpg",
-    tags: ["Flutter"],
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "Junior Security Analyst Intro",
+    description:"Play through a day in the life of a Security Analyst and experience their everyday duties.",
+    image: "https://tryhackme-images.s3.amazonaws.com/room-icons/678ecc92c80aa206339f0f23-1762187304976",
+    tags: ["Easy"],
+    demoUrl: "https://tryhackme.com/room/jrsecanalystintrouxo?utm_campaign=social_share&utm_medium=social&utm_content=share-completed-room&utm_source=copy&sharerId=69b0742e066fd68a51ce16fe",
   },
    {
     id: 6,
-    title: "Modern Business App",
+    title: "Intro to Logs",
     description:
-      "The Modern Business App is a POS system that help small business owners manage their sales, inventory, and customer data efficiently",
-    image: "/mb_seller.jpg",
-    tags: ["Flutter"],
-    demoUrl: "#",
-    githubUrl: "#",
+      "Learn the fundamentals of logging, data sources, collection methods and principles to step into the log analysis world.",
+    image: "https://tryhackme-images.s3.amazonaws.com/room-icons/19b19a4e55a402acb3161cd43f520381.png",
+    tags: ["Easy"],
+    demoUrl: "https://tryhackme.com/room/introtologs?utm_campaign=social_share&utm_medium=social&utm_content=share-completed-room&utm_source=copy&sharerId=69b0742e066fd68a51ce16fe",
+  },
+  {
+    id: 7,
+    title: "Burp Suite: Repeater",
+    description:
+      "Learn how to use Repeater to duplicate requests in Burp Suite.",
+    image: "https://tryhackme-images.s3.amazonaws.com/room-icons/003f622eb51e1399dde189ddbc9804a3.png",
+    tags: ["Info"],
+    demoUrl: "https://tryhackme.com/room/burpsuiterepeater?utm_campaign=social_share&utm_medium=social&utm_content=share-completed-room&utm_source=copy&sharerId=69b0742e066fd68a51ce16fe",
+  },
+  {
+    id: 8,
+    title: "SOC Role in Blue Team",
+    description:
+      "Discover security roles and learn how to advance your SOC career, starting from the L1 analyst.",
+    image: "https://tryhackme-images.s3.amazonaws.com/room-icons/678ecc92c80aa206339f0f23-1756302396554",
+    tags: ["Easy"],
+    demoUrl: "https://tryhackme.com/room/socroleinblueteam?utm_campaign=social_share&utm_medium=social&utm_content=share-completed-room&utm_source=copy&sharerId=69b0742e066fd68a51ce16fe",
+  },
+  {
+    id: 9,
+    title: "Careers in Cyber",
+    description:
+      "Learn about the different careers in cyber security.",
+    image: "https://tryhackme-images.s3.amazonaws.com/room-icons/e563831b46440404db43861a5246a6eed26ef95b14afe6ca310efee07958992b.png",
+    tags: ["Info"],
+    demoUrl: "https://tryhackme.com/room/careersincyber5zy1sk0al?utm_campaign=social_share&utm_medium=social&utm_content=share-completed-room&utm_source=copy&sharerId=69b0742e066fd68a51ce16fe",
+  },
+  {
+    id: 10,
+    title: "React2Shell: CVE-2025-55182",
+    description:
+      "Explore the CVE-2025-55182 vulnerability in React server components.",
+    image: "https://tryhackme-images.s3.amazonaws.com/room-icons/5f04259cf9bf5b57aed2c476-1764954113748",
+    tags: ["Easy"],
+    demoUrl: "https://tryhackme.com/room/react2shellcve202555182?utm_campaign=social_share&utm_medium=social&utm_content=share-completed-room&utm_source=copy&sharerId=69b0742e066fd68a51ce16fe",
+  },
+  {
+    id: 11,
+    title: "Offensive Security Introduction",
+    description:
+      "Hack your first website (legally in a safe environment) and experience an ethical hacker's job.",
+    image: "https://tryhackme-images.s3.amazonaws.com/room-icons/2dcbc5890dd1acb0c8f69208e6bbb75faa64678860482160c5eb15346434f569.5de96d9ca744773ea7ef8c00-1767868972234",
+    tags: ["Easy"],
+    demoUrl: "https://tryhackme.com/room/offensivesecurityintrokKx12l39?utm_campaign=social_share&utm_medium=social&utm_content=share-completed-room&utm_source=copy&sharerId=69b0742e066fd68a51ce16fe",
+  },
+  {
+    id: 12,
+    title: "Defensive Security Intro",
+    description:
+      "Introducing defensive security, where you will protect FakeBank from an ongoing attack.",
+    image: "https://tryhackme-images.s3.amazonaws.com/room-icons/5de96d9ca744773ea7ef8c00-1769425626237",
+    tags: ["Info"],
+    demoUrl: "https://tryhackme.com/room/defensivesecurityintroez?utm_campaign=social_share&utm_medium=social&utm_content=share-completed-room&utm_source=copy&sharerId=69b0742e066fd68a51ce16fe",
   },
 ];
 
@@ -70,12 +116,11 @@ export const ProjectsSection = () => {
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           {" "}
-          Featured <span className="text-primary"> Projects </span>
+          Completed <span className="text-primary"> Rooms </span>
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects. Each project was carefully
-          crafted with attention to detail, performance, and user experience.
+          Here are some of my completed TryHackMe rooms. Each room was completed with a focus on hands-on cybersecurity practice, real-world attack scenarios, and improving my SOC and security skills.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -115,30 +160,13 @@ export const ProjectsSection = () => {
                       target="_blank"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
-                      <ExternalLink size={20} />
-                    </a>
-                    <a
-                      href={project.apkUrl}
-                      download
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <SiAndroid size={20} />
+                      <SiTryhackme size={20} />
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <a
-            className="cosmic-button w-fit flex items-center mx-auto gap-2"
-            target="_blank"
-            href="https://github.com/Marato01"
-          >
-            Check My Github <ArrowRight size={16} />
-          </a>
         </div>
       </div>
     </section>

@@ -45,7 +45,7 @@ export const HeroSection = () => {
             </h1>
 
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto md:mx-0 opacity-0 animate-fade-in-delay-3">
-              I create exceptional mobile experiences using modern technologies, specializing in front-end development with Flutter to build interfaces that are both beautiful and highly functional.
+              I am building my skills in cybersecurity and SOC analysis, with a focus on monitoring security events, identifying threats, and supporting incident response activities.
             </p>
 
             <div className="pt-4 opacity-0 animate-fade-in-delay-4">
@@ -56,6 +56,7 @@ export const HeroSection = () => {
                 View My Work
               </a>
             </div>
+
           </div>
           <div className="flex justify-center md:justify-end mt-6 md:mt-0">
             <img
