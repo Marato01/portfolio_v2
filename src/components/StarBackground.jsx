@@ -1,57 +1,88 @@
 import { useEffect, useState } from "react";
 
 export const StarBackground = () => {
-  const [stars, setStars] = useState([]);
+  const [particles, setParticles] = useState([]);
 
   useEffect(() => {
-    generateStars();
+    generateParticles();
 
-    const handleResize = () => {
-      generateStars();
+    window.addEventListener("resize", generateParticles);
+
+    return () => {
+      window.removeEventListener("resize", generateParticles);
     };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const generateStars = () => {
-    const numberOfStars = Math.floor(
-      (window.innerWidth * window.innerHeight) / 10000
-    );
+  const generateParticles = () => {
+    const total = 80;
 
-    const newStars = [];
+    const items = [];
 
-    for (let i = 0; i < numberOfStars; i++) {
-      newStars.push({
+    for (let i = 0; i < total; i++) {
+      items.push({
         id: i,
-        size: Math.random() * 3 + 1,
         x: Math.random() * 100,
         y: Math.random() * 100,
-        opacity: Math.random() * 0.5 + 0.5,
-        animationDuration: Math.random() * 4 + 2,
+        size: Math.random() * 5 + 2,
+        duration: Math.random() * 10 + 5,
       });
     }
 
-    setStars(newStars);
+    setParticles(items);
   };
 
   return (
-    <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-      {stars.map((star) => (
+    <div className="fixed inset-0 z-0 bg-black overflow-hidden">
+      {/* Cyber Grid */}
+      <div
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `
+            linear-gradient(rgba(0,255,100,0.15) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0,255,100,0.15) 1px, transparent 1px)
+          `,
+          backgroundSize: "40px 40px",
+        }}
+      />
+
+      {/* Glow */}
+      <div className="absolute inset-0 bg-green-500/10 blur-3xl" />
+
+      {/* Particles */}
+      {particles.map((item) => (
         <div
-          key={star.id}
-          className="star animate-pulse-subtle"
+          key={item.id}
+          className="absolute rounded-full bg-green-400"
           style={{
-            width: star.size + "px",
-            height: star.size + "px",
-            left: star.x + "%",
-            top: star.y + "%",
-            opacity: star.opacity,
-            animationDuration: star.animationDuration + "s",
+            width: `${item.size}px`,
+            height: `${item.size}px`,
+            left: `${item.x}%`,
+            top: `${item.y}%`,
+            boxShadow: "0 0 15px #00ff99",
+            animation: `pulse ${item.duration}s infinite`,
           }}
         />
       ))}
+
+      {/* Animation */}
+      <style>
+        {`
+          @keyframes pulse {
+            0% {
+              transform: scale(1);
+              opacity: 0.3;
+            }
+            50% {
+              transform: scale(1.8);
+              opacity: 1;
+            }
+            100% {
+              transform: scale(1);
+              opacity: 0.3;
+            }
+          }
+        `}
+      </style>
     </div>
   );
 };
