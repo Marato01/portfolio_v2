@@ -108,6 +108,15 @@ const projects = [
     tags: ["Info"],
     demoUrl: "https://tryhackme.com/room/defensivesecurityintroez?utm_campaign=social_share&utm_medium=social&utm_content=share-completed-room&utm_source=copy&sharerId=69b0742e066fd68a51ce16fe",
   },
+  {
+    id: 13,
+    title: "Linux Privilege Escalation: Enumeration",
+    description:
+      "Gather information about the target host to understand the system for privilege escalation.",
+    image: "https://tryhackme-images.s3.amazonaws.com/room-icons/6989b1062386d3517f652edd-1772788398210",
+    tags: ["Info"],
+    demoUrl: "https://tryhackme.com/room/linprivenum?utm_campaign=social_share&utm_medium=social&utm_content=share-completed-room&utm_source=copy&sharerId=69b0742e066fd68a51ce16fe",
+  },
 ];
 
 export const ProjectsSection = () => {
